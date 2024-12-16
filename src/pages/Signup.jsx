@@ -8,6 +8,9 @@ const Signup = ({display,setDisplay}) => {
     } = useForm();
 
 
+        const onSubmit = ()=>{};
+
+    
   if (!display) return null; // If display is false, do not render the component
 
 
