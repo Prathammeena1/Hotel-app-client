@@ -1,11 +1,6 @@
-// src/store/store.js
-import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./reducers/userSlice"; // Example slice, create your slices as needed
+import { configureStore } from '@reduxjs/toolkit'
 
-const store = configureStore({
-    reducer: {
-        user: userReducer, // Add more reducers as needed
-    },
-});
-
-export default store;
+export const store = configureStore({
+  reducer: {
+  },
+})

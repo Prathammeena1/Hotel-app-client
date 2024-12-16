@@ -1,18 +1,12 @@
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
-import { asyncsignup } from "../store/actions/userActions";
 
 const Signup = ({display,setDisplay}) => {
-    const dispatch = useDispatch();
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
-    const onSubmit = async (data) => {
-        dispatch(asyncsignup(data));
-    };
 
   if (!display) return null; // If display is false, do not render the component
 

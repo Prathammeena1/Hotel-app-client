@@ -1,18 +1,13 @@
 import { useForm } from "react-hook-form";
-import { asynclogin } from "../store/actions/userActions";
 import { useDispatch } from "react-redux";
 
 const Login = ({display,setDisplay}) => {
-    const dispatch = useDispatch();
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
-    const onSubmit = async (data) => {
-        dispatch(asynclogin(data));
-    };
 
   if (!display) return null; // If display is false, do not render the component
 
